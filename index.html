@@ -1,152 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TS3 Collections — Branded Women’s Wear</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TS3 Collections — Trending Women’s Fashion</title>
 
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(120deg, #f72585, #7209b7, #4361ee);
-      min-height: 100vh;
-      color: #fff;
-    }
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,Arial,Helvetica,sans-serif;
+  background:#0f172a;
+  color:#fff;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+/* HERO */
+.hero{
+  min-height:70vh;
+  background:url("https://images.unsplash.com/photo-1520974735194-6c8a02a0a2c0?auto=format&fit=crop&w=1400&q=60")
+    center/cover no-repeat;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,#0008,#000);
+}
+.hero-content{
+  position:relative;
+  text-align:center;
+  max-width:720px;
+  padding:24px;
+}
+.hero h1{font-size:2.6rem;margin:0 0 12px}
+.hero p{opacity:.9}
 
-    header {
-      text-align: center;
-      padding: 22px 10px;
-      margin-bottom: 20px;
-      backdrop-filter: blur(10px);
-      background: rgba(255,255,255,0.1);
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,0.25);
-    }
+/* SECTION */
+.section{
+  padding:40px 18px;
+  max-width:1200px;
+  margin:auto;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-      margin-top: 18px;
-    }
+/* GLASS GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
+}
+.card{
+  background:linear-gradient(150deg,#ffffff22,#ffffff06);
+  border:1px solid #ffffff33;
+  border-radius:18px;
+  backdrop-filter:blur(10px);
+  overflow:hidden;
+  color:#e5e7eb;
+}
+.card img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+}
+.card h3{margin:12px 14px 6px}
+.card p{margin:0 14px 14px;font-size:.95rem;opacity:.9}
 
-    .card {
-      backdrop-filter: blur(12px);
-      background: rgba(255,255,255,0.18);
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,0.35);
-      padding: 12px;
-      color: #111;
-    }
+/* CTA */
+.btn{
+  display:inline-block;
+  margin-top:10px;
+  padding:10px 18px;
+  border-radius:999px;
+  text-decoration:none;
+  background:#f97316;
+  color:#fff;
+  font-weight:600;
+}
 
-    .card img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      border-radius: 14px;
-    }
-
-    .brand { font-weight: bold; margin: 10px 0 6px; }
-    .cta {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 8px 14px;
-      border-radius: 10px;
-      text-decoration: none;
-      background:#111;
-      color:#fff;
-    }
-
-    footer {
-      margin-top: 28px;
-      text-align: center;
-      padding: 14px;
-      backdrop-filter: blur(10px);
-      background: rgba(255,255,255,0.12);
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.25);
-    }
-  </style>
+/* FOOTER */
+footer{
+  padding:22px;
+  text-align:center;
+  color:#cbd5f5;
+  border-top:1px solid #334155;
+}
+</style>
 </head>
 
 <body>
-<div class="container">
 
-<header>
-  <h1>TS3 Collections</h1>
-  <p>Glassy Style Boutique — Premium Branded Women’s Clothing</p>
-</header>
-
-<h2>Featured Brands</h2>
-
-<div class="grid">
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b" alt="BIBA ethnic wear">
-    <div class="brand">BIBA — Elegant Ethnic</div>
-    <p>Designer suits, kurtis and festive wear crafted for comfort and style.</p>
+<section class="hero">
+  <div class="hero-content">
+    <h1>TS3 Collections</h1>
+    <p>Trending branded women’s fashion — BIBA • W • Aurelia • Avaasa & more.</p>
+    <a href="tel:+919945702720" class="btn">Call / Order Now</a>
   </div>
+</section>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1520971349231-0490a3a7e9c2" alt="W brand womenswear">
-    <div class="brand">W — Modern Work & Casual</div>
-    <p>Trendy everyday outfits perfect for office and daily wear.</p>
+<section class="section">
+  <h2>Featured Brands</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=800&q=60">
+      <h3>BIBA — Festive & Ethnic</h3>
+      <p>Elegant suits, kurtis and ethnic sets crafted with premium fabrics.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520971349231-0490a3a7e9c2?auto=format&fit=crop&w=800&q=60">
+      <h3>W — Work & Casual</h3>
+      <p>Smart, stylish outfits perfect for office wear and everyday looks.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1503342452485-86b7f54527dd?auto=format&fit=crop&w=800&q=60">
+      <h3>Aurelia — Kurtis & Sets</h3>
+      <p>Classic silhouettes with modern prints for every occasion.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60">
+      <h3>Avaasa Tops</h3>
+      <p>Comfortable, trendy tops — perfect for daily fashion.</p>
+    </div>
   </div>
+</section>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1503342452485-86b7f54527dd" alt="Aurelia kurtis">
-    <div class="brand">Aurelia — Kurtis & Sets</div>
-    <p>Classic styles with beautiful prints for every occasion.</p>
+<section class="section">
+  <h2>Explore More Styles</h2>
+
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975698519-59bafd9b5580?auto=format&fit=crop&w=800&q=60">
+      <h3>Party Wear</h3>
+      <p>Shimmering silhouettes designed to stand out.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=60">
+      <h3>Western Wear</h3>
+      <p>Dresses, tops, and casual sets for modern looks.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1521336759328-1d8263cd1f4c?auto=format&fit=crop&w=800&q=60">
+      <h3>Loungewear</h3>
+      <p>Soft, breathable styles for everyday comfort.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=60">
+      <h3>Sarees</h3>
+      <p>Designer sarees perfect for festivals and weddings.</p>
+    </div>
   </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="Avaasa tops">
-    <div class="brand">Avaasa Tops</div>
-    <p>Comfortable and stylish tops designed for everyday fashion.</p>
-  </div>
-</div>
-
-<h2 style="margin-top:28px;">All Types of Women’s Branded Clothing</h2>
-
-<div class="grid">
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1520975918319-1536f2f2f6f5" alt="Sarees">
-    <div class="brand">Sarees</div>
-    <p>Traditional & designer collections.</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1520975698519-59bafd9b5580" alt="Party wear">
-    <div class="brand">Party Wear</div>
-    <p>Make every moment special.</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Western wear">
-    <div class="brand">Western Wear</div>
-    <p>Dresses, tops and casual outfits.</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1521336759328-1d8263cd1f4c" alt="Loungewear">
-    <div class="brand">Loungewear</div>
-    <p>Soft, breathable and cozy.</p>
-  </div>
-</div>
+</section>
 
 <footer>
-  <p><strong>Visit:</strong> Krishnarajapuram, Bengaluru — 560036</p>
-  <p><strong>Call:</strong> <a href="tel:+919945702720" style="color:#fff;">+91 99457 02720</a></p>
-  <p>Open daily • Closes 9:30 PM</p>
+  TS3 Collections • Krishnarajapuram, Bengaluru — 560036 • 
+  <a href="tel:+919945702720" style="color:#f97316">+91 99457 02720</a><br/>
+  Open Daily — Closes 9:30 PM
 </footer>
 
-</div>
 </body>
 </html>
