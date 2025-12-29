@@ -3,83 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TS3 Collections — Branded Women’s Clothing</title>
+  <title>TS3 Collections — Branded Women’s Wear</title>
 
   <style>
-    body{font-family:Arial,Helvetica,sans-serif;margin:0;color:#222}
-    header{background:#111;color:#fff;padding:22px;text-align:center}
-    .hero{padding:40px;text-align:center;background:#f7f7f7}
-    .btn{display:inline-block;margin-top:14px;padding:10px 18px;border-radius:6px;text-decoration:none;background:#111;color:#fff}
-    .section{padding:28px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-    .card{border:1px solid #ddd;border-radius:10px;padding:14px}
-    footer{background:#111;color:#fff;padding:16px;text-align:center}
-    a{color:#111}
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(120deg, #f72585, #7209b7, #4361ee);
+      min-height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 22px 10px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.1);
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .card {
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,0.18);
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 12px;
+      color: #111;
+    }
+
+    .card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    .brand { font-weight: bold; margin: 10px 0 6px; }
+    .cta {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      background:#111;
+      color:#fff;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      padding: 14px;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.12);
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.25);
+    }
   </style>
 </head>
 
 <body>
+<div class="container">
 
 <header>
   <h1>TS3 Collections</h1>
-  <p>Branded Women’s Clothing — Stylish • Authentic • Affordable</p>
+  <p>Glassy Style Boutique — Premium Branded Women’s Clothing</p>
 </header>
 
-<section class="hero">
-  <h2>Welcome to TS3 Collections</h2>
-  <p>
-    Discover a wide range of premium branded women’s fashion — sarees, kurtis, western wear,
-    party wear, ethnic sets and more. Quality, comfort and style for every occasion.
-  </p>
-  <a class="btn" href="tel:+919945702720">Call Now</a>
-</section>
+<h2>Featured Brands</h2>
 
-<section class="section">
-  <h2>Our Collections</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Elegant Sarees</h3>
-      <p>Beautiful fabrics and designs for festivals, weddings and celebrations.</p>
-    </div>
-
-    <div class="card">
-      <h3>Stylish Kurtis</h3>
-      <p>Perfect daily wear and office wear — comfortable and trendy.</p>
-    </div>
-
-    <div class="card">
-      <h3>Western Wear</h3>
-      <p>Dresses, tops and more for modern fashion lovers.</p>
-    </div>
-
-    <div class="card">
-      <h3>Party & Occasion Wear</h3>
-      <p>Stand-out outfits designed to make you feel confident and beautiful.</p>
-    </div>
+<div class="grid">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1587831990711-23ca6441447b" alt="BIBA ethnic wear">
+    <div class="brand">BIBA — Elegant Ethnic</div>
+    <p>Designer suits, kurtis and festive wear crafted for comfort and style.</p>
   </div>
-</section>
 
-<section class="section">
-  <h2>Store Information</h2>
-  <p><strong>Address:</strong><br>
-    Kote K.R, 152, Masjid Road,<br>
-    Shani Mahatma Temple Rd, Krishnarajapuram,<br>
-    Bengaluru, Karnataka — 560036
-  </p>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1520971349231-0490a3a7e9c2" alt="W brand womenswear">
+    <div class="brand">W — Modern Work & Casual</div>
+    <p>Trendy everyday outfits perfect for office and daily wear.</p>
+  </div>
 
-  <p><strong>Phone:</strong> <a href="tel:+919945702720">099457 02720</a></p>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1503342452485-86b7f54527dd" alt="Aurelia kurtis">
+    <div class="brand">Aurelia — Kurtis & Sets</div>
+    <p>Classic styles with beautiful prints for every occasion.</p>
+  </div>
 
-  <p><strong>Hours:</strong> Open — Closes 9:30 PM</p>
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="Avaasa tops">
+    <div class="brand">Avaasa Tops</div>
+    <p>Comfortable and stylish tops designed for everyday fashion.</p>
+  </div>
+</div>
 
-  <p>
-    <a class="btn" href="https://maps.google.com/?q=TS3+Collections+Krishnarajapuram">Get Directions</a>
-  </p>
-</section>
+<h2 style="margin-top:28px;">All Types of Women’s Branded Clothing</h2>
+
+<div class="grid">
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1520975918319-1536f2f2f6f5" alt="Sarees">
+    <div class="brand">Sarees</div>
+    <p>Traditional & designer collections.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1520975698519-59bafd9b5580" alt="Party wear">
+    <div class="brand">Party Wear</div>
+    <p>Make every moment special.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Western wear">
+    <div class="brand">Western Wear</div>
+    <p>Dresses, tops and casual outfits.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1521336759328-1d8263cd1f4c" alt="Loungewear">
+    <div class="brand">Loungewear</div>
+    <p>Soft, breathable and cozy.</p>
+  </div>
+</div>
 
 <footer>
-  © TS3 Collections — Bengaluru, Karnataka
+  <p><strong>Visit:</strong> Krishnarajapuram, Bengaluru — 560036</p>
+  <p><strong>Call:</strong> <a href="tel:+919945702720" style="color:#fff;">+91 99457 02720</a></p>
+  <p>Open daily • Closes 9:30 PM</p>
 </footer>
 
+</div>
 </body>
 </html>
